@@ -1,6 +1,6 @@
 /* Global Styles */
 * {
-    margin: 0;
+    margin: 10;
     padding: 0;
     box-sizing: border-box;
 }
@@ -15,7 +15,7 @@ body {
 /* Header */
 header {
     background-color: #1B1B1B;
-    padding: 20px;
+    padding: 30px;
 }
 
 nav {
@@ -90,6 +90,7 @@ nav ul li a:hover {
     padding: 100px 20px;
     text-align: center;
     transition: padding 0.3s ease;
+    margin-bottom: 5%;
 }
 
 #hero h2 {
@@ -102,32 +103,48 @@ nav ul li a:hover {
 }
 
 /* Serviços e outras seções */
-.servico, .pacote {
-    margin-bottom: 30px;
-    padding: 20px;
+/* Container para as caixinhas de pacotes */
+.pacotes .content {
+    display: flex;
+    justify-content: space-between;  /* Espaço igual entre os itens */
+    gap: 20px;  /* Espaçamento entre as caixinhas */
+    flex-wrap: wrap;  /* Permite que os itens que não couberem em uma linha passem para a linha seguinte */
+}
+
+/* Cada caixinha de pacote */
+.pacote {
     background-color: #333333;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch; /* Faz com que os itens dentro da caixa se estiquem igualmente */
+    height: 360px;
+    width: 400px;
 }
 
-.servico h3, .pacote h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
 
-/* Responsividade para telas pequenas */
+/* Para telas menores, ajusta o layout para uma coluna */
 @media (max-width: 768px) {
-    .servico, .pacote {
-        padding: 15px;
+    .pacote {
+        flex: 0 1 100%;
+        margin-bottom: 15px;  /* Ajusta o espaçamento */
+        min-height: 200px;  /* Ajusta a altura mínima para telas menores */
     }
+}
 
-    #hero {
-        padding: 60px 20px;
-    }
+.contato{
+    margin-bottom: 5%;
 }
 
 /* Outros estilos de design */
 footer {
+    margin: -20;
     background-color: #333333;
     color: #E0E0E0;
     padding: 20px;
