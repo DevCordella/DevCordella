@@ -1,6 +1,6 @@
 /* Global Styles */
 * {
-    margin: 10;
+    margin: 7;
     padding: 0;
     box-sizing: border-box;
 }
@@ -116,7 +116,7 @@ nav ul li a:hover {
     background-color: #333333;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
     width: calc(100% - 20px);
     box-sizing: border-box;
     margin-bottom: 30px;
@@ -124,10 +124,25 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch; /* Faz com que os itens dentro da caixa se estiquem igualmente */
-    height: 400px;
+    height: 295px;
     width: 350px;
 }
 
+.sobre {
+    margin-bottom: 3%;
+}
+
+.servicos{
+    margin-bottom: 3%;
+}
+
+.sobre {
+    margin-bottom: 3%;
+}
+
+.portfolio{
+    margin-bottom: 3%;
+}
 
 /* Para telas menores, ajusta o layout para uma coluna */
 @media (max-width: 768px) {
