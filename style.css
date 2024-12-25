@@ -159,9 +159,19 @@ nav ul li a:hover {
 
 /* Outros estilos de design */
 footer {
-    margin: -20;
-    background-color: #333333;
-    color: #E0E0E0;
-    padding: 20px;
-    text-align: center;
+  margin-top: 50px;
+  background-color: #1a1a1a; /* Fundo escuro */
+  color: #dcdcdc; /* Texto cinza claro */
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  border-top: 2px solid #4CAF50; /* Linha de destaque no topo */
+}
+
+footer p {
+  margin: 0;
+}
+
+footer strong {
+  color: #4CAF50; /* Destaque no nome Dev Cordella */
 }
