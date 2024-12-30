@@ -27,8 +27,12 @@ nav {
     align-items: center;
 }
 
-nav .logo h1 {
-    color: #76C7C0;
+.simbolo {
+    color: #ffffff; /* Cor para o símbolo </> */
+}
+
+.nome {
+    color: #9598b4; /* Cor para DevCordella */
 }
 
 nav ul {
@@ -150,7 +154,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch; /* Faz com que os itens dentro da caixa se estiquem igualmente */
-    height: 295px;
+    height: 310px;
     width: 350px;
 }
 
@@ -160,6 +164,19 @@ nav ul li a:hover {
 
 .servicos{
     margin-bottom: 3%;
+    margin-right: -2%;
+    margin-left: -2%;
+    padding: 2%;
+    background-color: rgb(40, 40, 44);
+}
+
+@media (max-width: 768px) {
+    .servicos {
+        margin-right: -2%;
+        margin-left: -2%;
+        padding: 2%;
+        background-color: rgb(40, 40, 44);
+    }
 }
 
 .sobre {
