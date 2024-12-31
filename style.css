@@ -165,6 +165,8 @@ nav ul li a:hover {
 }
 
 .servicos{
+    height: 400px;
+    margin-top: -1%;
     margin-bottom: 3%;
     margin-right: -2%;
     margin-left: -2%;
@@ -182,11 +184,8 @@ nav ul li a:hover {
 }
 
 .sobre {
-    margin-bottom: 3%;
-}
-
-.portfolio{
-    margin-bottom: 3%;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 /* Para telas menores, ajusta o layout para uma coluna */
@@ -199,7 +198,22 @@ nav ul li a:hover {
 }
 
 .contato{
-    margin-bottom: 5%;
+    margin-top: -1%;
+    margin-bottom: 3%;
+    background-color: #1B1B1B;
+    height: 200px;
+    border-radius: 20px;
+    align-items: stretch
+}
+
+.portfolio{
+    background-color: #16151a;
+    margin-top: -1%;
+    margin-bottom: 3%;
+    height: 230px;
+    margin-right: -2%;
+    margin-left: -2%;
+    padding: 2%;
 }
 
 /* Outros estilos de design */
