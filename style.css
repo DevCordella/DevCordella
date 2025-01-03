@@ -21,6 +21,13 @@ header {
     margin-right: -1%;
 }
 
+@media (max-width: 768px) {
+    header {
+        margin-top: -10%;
+        margin-left: -10%;
+        width: 400px;
+    }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -107,6 +114,14 @@ nav ul li a:hover {
     filter: brightness(0.5); /* Escurece a imagem para destacar o texto */
 }
 
+@media (max-width: 768px) {
+    .hero img {
+        margin-top: -4%;
+        width: 383px;
+        margin-left: -10%;
+    }
+}
+
 .hero-text {
     position: absolute;
     top: 50%;
@@ -160,6 +175,7 @@ nav ul li a:hover {
     width: 350px;
 }
 
+
 .sobre {
     margin-bottom: 3%;
 }
@@ -178,11 +194,12 @@ nav ul li a:hover {
     .servicos {
         margin-top: 5%;
         margin-right: -2%;
-        margin-left: -2%;
+        margin-left: -4.9%;
         margin-bottom: 15%;
-        height: 510px;
+        height: 780px;
         padding: 2%;
         background-color: rgb(40, 40, 44);
+        width: 340px;
     }
 }
 
