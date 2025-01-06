@@ -1,4 +1,4 @@
-*{
+* {
     margin: 7;
     padding: 0;
     box-sizing: border-box;
@@ -122,8 +122,6 @@ nav ul li a:hover {
     font-size: 1.2rem;
 }
 
-
-
 #hero h2 {
     font-size: 3rem;
     margin-bottom: 10px;
@@ -163,7 +161,7 @@ nav ul li a:hover {
     margin-bottom: 3%;
 }
 
-.servicos{
+.servicos {
     height: 400px;
     margin-top: -1%;
     margin-bottom: 3%;
@@ -199,7 +197,7 @@ nav ul li a:hover {
     }
 }
 
-.contato{
+.contato {
     margin-bottom: 10%;
     background-color: #1B1B1B;
     height: 200px;
@@ -207,10 +205,9 @@ nav ul li a:hover {
     align-items: stretch
 }
 
-.portfolio{
+.portfolio {
     background-color: #16151a;
     margin-top: -1%;
-
     height: 230px;
     margin-right: -2%;
     margin-left: -2%;
