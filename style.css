@@ -51,7 +51,6 @@ nav ul li a:hover {
 }
 
 /* Mobile Menu */
-
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -92,12 +91,12 @@ nav ul li a:hover {
 }
 
 /* Hero Section */
-.hero {
+#hero {
     position: relative;
     text-align: center;
 }
 
-.hero img {
+#hero img {
     margin-top: -1%;
     width: 105%;
     margin-left: -3%;
@@ -106,7 +105,7 @@ nav ul li a:hover {
     filter: brightness(0.5); /* Escurece a imagem para destacar o texto */
 }
 
-.hero-text {
+#hero .hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -114,25 +113,15 @@ nav ul li a:hover {
     color: #E0E0E0;
 }
 
-.hero-text h2 {
+#hero .hero-text h2 {
     font-size: 3rem;
 }
 
-.hero-text p {
-    font-size: 1.2rem;
-}
-
-#hero h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-#hero p {
+#hero .hero-text p {
     font-size: 1.2rem;
 }
 
 /* Serviços e outras seções */
-/* Container para as caixinhas de pacotes */
 .pacotes .content {
     display: flex;
     justify-content: space-between;  /* Espaço igual entre os itens */
@@ -161,7 +150,7 @@ nav ul li a:hover {
     margin-bottom: 3%;
 }
 
-.servicos {
+#servicos {
     height: 400px;
     margin-top: -1%;
     margin-bottom: 3%;
@@ -172,7 +161,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-    .servicos {
+    #servicos {
         margin-top: 5%;
         margin-right: -2%;
         margin-left: -2%;
@@ -205,7 +194,7 @@ nav ul li a:hover {
     align-items: stretch
 }
 
-.portfolio {
+#portfolio {
     background-color: #16151a;
     margin-top: -1%;
     height: 230px;
