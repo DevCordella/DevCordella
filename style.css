@@ -1,5 +1,6 @@
+/* Estilos Globais */
 * {
-    margin: 7;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -27,11 +28,11 @@ nav {
 }
 
 .simbolo {
-    color: #ffffff; /* Cor para o símbolo </> */
+    color: #ffffff;
 }
 
 .nome {
-    color: #9598b4; /* Cor para DevCordella */
+    color: #9598b4;
 }
 
 nav ul {
@@ -50,7 +51,6 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Mobile Menu */
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -75,7 +75,7 @@ nav ul li a:hover {
     margin-left: -3%;
     height: 100vh;
     object-fit: cover;
-    filter: brightness(0.5); /* Escurece a imagem para destacar o texto */
+    filter: brightness(0.5);
 }
 
 .hero-text {
@@ -91,15 +91,6 @@ nav ul li a:hover {
 }
 
 .hero-text p {
-    font-size: 1.2rem;
-}
-
-#hero h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-#hero p {
     font-size: 1.2rem;
 }
 
@@ -288,11 +279,13 @@ footer {
     margin-right: -4%;
 }
 
-/* Responsive Adjustments */
+/* Responsividade */
 @media (max-width: 768px) {
     header {
-        margin-left: -8%;
-        width: 350px;
+        padding: 20px;
+        margin-left: -5%;
+        margin-right: -5%;
+        text-align: center;
     }
 
     nav ul {
@@ -301,49 +294,51 @@ footer {
         gap: 15px;
         position: absolute;
         top: 70px;
-        right: 20px;
+        right: 10px;
         background-color: #1B1B1B;
         padding: 20px;
         border-radius: 8px;
-    }
-
-    nav ul li a {
-        font-size: 1.2rem;
-    }
-
-    .menu-toggle {
-        display: block;
     }
 
     nav ul.active {
         display: flex;
     }
 
+    .menu-toggle {
+        display: block;
+    }
+
     .hero img {
-        width: 500px;
-        margin-left: -60%;
+        width: 100%;
+        margin-left: 0;
+        height: auto;
     }
 
-    #about {
-        margin-left: -10%;
-        width: 350px;
+    #about .content {
+        flex-direction: column;
     }
 
-    #services h2 {
-        margin-left: -2%;
+    #services {
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    #services .content {
-        margin-left: -6%;
+    #packages .content {
+        flex-direction: column;
+        gap: 15px;
     }
 
     .package {
-        width: 300px;
-        margin-left: -12%;
-        height: 390px;
+        width: 100%;
+        height: auto;
     }
 
-    #packages h2, #packages h3 {
-        margin-left: -5%;
+    #portfolio .content {
+        flex-direction: column;
+    }
+
+    footer {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
