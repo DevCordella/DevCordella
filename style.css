@@ -18,7 +18,6 @@ header {
     margin-top: -1%;
     margin-left: -1%;
     margin-right: -1%;
-    witdth: 460px;
 }
 
 nav {
@@ -64,32 +63,6 @@ nav ul li a:hover {
     background-color: #E0E0E0;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        gap: 15px;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        background-color: #1B1B1B;
-        padding: 20px;
-        border-radius: 8px;
-    }
-
-    nav ul li a {
-        font-size: 1.2rem;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-}
-
 /* Hero Section */
 .hero {
     position: relative;
@@ -103,15 +76,6 @@ nav ul li a:hover {
     height: 100vh;
     object-fit: cover;
     filter: brightness(0.5); /* Escurece a imagem para destacar o texto */
-}
-
-@media (max-width: 768px) {
-    .hero img {
-        width: 100%;
-        height: 70vh; /* Ajusta a altura para telas menores */
-        object-fit: cover; /* Garante que a imagem seja cortada para caber no espaço */
-        margin-left: 0;
-    }
 }
 
 .hero-text {
@@ -164,19 +128,13 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-    #about {
-        margin-left: -10%;
-        width: 350px;
-    }
-}
-
 /* Services Section */
 #services {
     padding: 40px 20px;
     background-color: #2D2D32;
     margin-left: -4%;
     margin-right: -3%;
+    width: 105%;
 }
 
 #services h2 {
@@ -207,16 +165,6 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-    #services h2 {
-        margin-left: -2%;
-    }
-    
-    #services .content {
-        margin-left: -6%;
-    }
-}
-
 /* Packages Section */
 #packages {
     padding: 40px 20px;
@@ -239,8 +187,7 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    box-sizing: border-box;
+    width: 340px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -270,26 +217,14 @@ nav ul li a:hover {
     margin-top: 15px;
 }
 
-@media (max-width: 768px) {
-    .package {
-        flex: 0 1 100%;
-        margin-bottom: 15px;
-        height: 390px;
-        width: 300px;
-        margin-left: -12%;
-    }
-    
-    #packages h2 {
-        margin-left: -5%;
-    }
-}
-
 /* Portfolio Section */
 #portfolio {
     padding: 40px 20px;
     background-color: #222125;
     border-radius: 100px;
     margin-bottom: 6%;
+    width: 45%;
+    float: left;
 }
 
 #portfolio h2 {
@@ -317,7 +252,11 @@ nav ul li a:hover {
 #contact {
     background-color: #1B1B1B;
     border-radius: 20px;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+    width: 560px;
+    justify-content: end;
+    margin-top: 60px;
+    margin-left: 650px;
 }
 
 #contact h2 {
@@ -340,6 +279,16 @@ nav ul li a:hover {
     padding: 10px;
 }
 
+#contact .content .column-gmail img{
+    width: 50px;
+}
+
+#contact .content .column-github img{
+    margin-top: -1px;
+    margin-left: -40px;
+    width: 65px;
+}
+
 #contact a {
     color: #76C7C0;
     text-decoration: none;
@@ -350,8 +299,140 @@ footer {
     background-color: #333333;
     color: #E0E0E0;
     padding: 30px;
-    text-align: center;
     margin-left: -4%;
-    margin-right: -4%;
-    margin-bottom: 0%;
+    width: 105%;
+    margin-bottom: -15px;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        margin-left: -8%;
+        margin-top: -4%;
+        width: 110%;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #1B1B1B;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hero img {
+        width: 113%;
+        margin-left: -8%;
+    }
+
+    #about {
+        margin-left: -2%;
+        width: 105%;
+    }
+
+    #services h2 {
+        margin-left: 2%;
+    }
+
+    #services .content {
+        width: 96%;
+        margin-left: -2%;
+    }
+
+    .package {
+        align-items: left;
+        width: 350px;
+        margin-left: -12%;
+        height: 390px;
+        margin: 0 auto;
+        
+    }
+
+    #packages h2, #packages h3 {
+        margin-left: -5%;
+    }
+
+    #portfolio {
+        width: 100%;
+        float: none;
+        margin: 20px auto;
+        border-radius: 10px; /* Reduzido para telas menores */
+        padding: 20px; /* Adicionado padding */
+    }
+
+    #portfolio h2 {
+        text-align: left; /* Centraliza o título */
+    }
+
+    #portfolio .content {
+        flex-direction: column; /* Organiza em coluna */
+        align-items: left;
+    }
+
+    #portfolio .column {
+        width: 100%; /* Colunas ocupam a largura total */
+        padding: 10px 0;
+    }
+
+    /* Ajustes para contato */
+    #contact {
+        width: 90%; /* Ocupa 90% da largura da tela */
+        margin: 20px auto; /* Centralizado na tela */
+        padding: 20px; /* Adicionado padding */
+        border-radius: 50px; /* Suaviza as bordas */
+    }
+
+    #contact h2 {
+        text-align: left; /* Centraliza o título */
+    }
+
+    #contact .content {
+        display: flex; /* Alinha itens na horizontal */
+        flex-direction: row; /* Mantém os itens lado a lado */
+        justify-content: center; /* Centraliza os ícones horizontalmente */
+        align-items: center; /* Alinha os ícones verticalmente */
+        gap: 20px; /* Espaçamento entre os ícones */
+    }
+
+    #contact .column {
+        width: 100%; /* Colunas ocupam a largura total */
+        padding: 10px 0;
+    }
+
+
+    #contact .content .column-gmail img {
+        width: 40px; /* Ajusta o tamanho das imagens */
+        margin: 10px auto; /* Centraliza as imagens */
+    }
+
+    #contact .content .column-github img {
+        width: 60px; /* Ajusta o tamanho das imagens */
+        margin: 10px auto; /* Centraliza as imagens */
+        justify-content: end;
+    }
+
+    /* Ajustes para rodapé */
+    footer {
+        width: 100%; /* Ocupa toda a largura */
+        padding: 20px; /* Adicionado padding */
+        margin: 0 auto; /* Remove margem lateral negativa */
+        text-align: center; /* Centraliza o texto */
+    }
 }
