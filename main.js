@@ -1,2 +1,10 @@
-console.log('Tudo carregado')
-alert('Este site ainda está em desenvolvimento, mas caso tenha interesse, pode entrar em contato.')
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+console.log('All set!')
